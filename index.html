@@ -145,6 +145,11 @@
   .step h3{font-size:1.08rem;margin-bottom:.45rem}
   .step p{font-size:.88rem;color:var(--soft);font-weight:300}
 
+  .steps.mini .step{padding:1.1rem 1.15rem}
+  .steps.mini .step::before{top:.95rem;right:.95rem;width:1.6rem;height:1.6rem;font-size:.78rem}
+  .steps.mini .step h3{font-size:.98rem;margin-bottom:.25rem;padding-right:2rem}
+  .steps.mini .step p{font-size:.83rem}
+
   /* ───── reviews ───── */
   .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
   @media(max-width:820px){.reviews{grid-template-columns:1fr}}
@@ -228,6 +233,77 @@
   <div class="wrap">
     <div class="logo">Much Ado <em>About</em> Doodles</div>
     <nav class="demo"><span>Puppies</span><span>Upcoming Litters</span><span>Training</span><span>Guides</span><span>Contact</span></nav>
+
+<!-- ════════ 3 · Bloque comercial (arriba, tras hero+TOC) ════════ -->
+<section id="puppies" class="band">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Now Reserving</span>
+      <h2>Available Goldendoodle Puppies &amp; Upcoming Litters</h2>
+      <p>Every puppy goes home with a veterinary health certificate and our lifetime support.</p>
+    </div>
+    <div class="litters">
+      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
+        <div class="body"><h3>Lady Diana's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
+      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
+        <div class="body"><h3>Antigone's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
+      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
+        <div class="body"><h3>Teresa's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
+    </div>
+
+    <div class="steps mini" style="margin-top:2.5rem">
+      <div class="step"><h3>Browse Our Puppies</h3><p>Explore available puppies and upcoming litters.</p></div>
+      <div class="step"><h3>Make a Reservation</h3><p>Request a reservation form — or visit in person or virtually first.</p></div>
+      <div class="step"><h3>Stay Updated</h3><p>Regular progress updates until they're old enough to go home.</p></div>
+      <div class="step"><h3>Personalized Delivery</h3><p>Hand-delivered anywhere in the 48 contiguous states.</p></div>
+    </div>
+    <div class="btn-row">
+      <a class="btn secondary" href="#">All Goldendoodles</a>
+      <a class="btn secondary" href="#">All Labradoodles</a>
+      <a class="btn secondary" href="#">All Cockapoos</a>
+      <a class="btn secondary" href="#">All Trained Puppies</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 4 · Núcleo informativo condensado ════════ -->
+<section id="meet">
+  <div class="wrap narrow prose">
+    <span class="eyebrow">The Breed</span>
+    <div class="sec-head" style="margin-bottom:1.25rem"><h2>Meet the Goldendoodle: America's Favorite Designer Dog</h2></div>
+    <p>A Goldendoodle is a cross between a Golden Retriever and a Poodle — two of the most intelligent, loyal breeds in the world. The result? A dog that is <strong>gentle with children, easy to train, low-shedding</strong>, and endlessly loving, with that unmistakable teddy-bear charm. Our Virginia-based kennel breeds for health and temperament first.</p>
+    <h3>Coat, shedding &amp; allergies</h3>
+    <p>Bred for <strong>low-shedding, allergy-friendly coats</strong> — among the closest to non-shedding a dog can get. Coats range from tight curls (shed least, need more grooming) to loose, shaggy waves; most owners keep them trimmed to prevent matting.</p>
+    <h3>Temperament &amp; training</h3>
+    <p>Intelligent, patient, and adoring — highly sociable with children, other dogs, and even cats. They learn fast and respond best to positive, consistent training. Plan on 30–60 minutes of activity a day and plenty of human company.</p>
+    <p style="margin-top:1.25rem"><a class="spoke" href="#">Goldendoodle temperament guide <svg class="ico"><use href="#i-arrow"/></svg></a>&ensp;·&ensp;<a class="spoke" href="#">F1, F1b and F2 generations <svg class="ico"><use href="#i-arrow"/></svg></a>&ensp;·&ensp;<a class="spoke" href="#">Do they change color? <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<section id="sizes" class="band">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Sizes</span>
+      <h2>Goldendoodle Sizes: Mini, Medium &amp; Standard</h2>
+      <p>Not every family needs the same dog — that's why we breed three sizes.</p>
+    </div>
+    <div class="sizes">
+      <div class="size-card"><span class="w">15–35 LBS</span><h3>Mini Goldendoodle</h3><p>Ideal for smaller homes or families who want a more compact companion — with all the personality of their larger siblings.</p></div>
+      <div class="size-card"><span class="w">35–50 LBS</span><h3>Medium Goldendoodle</h3><p>The sweet spot. Active enough to hike with you, calm enough to curl up on the couch at the end of the day.</p></div>
+      <div class="size-card"><span class="w">50–90 LBS</span><h3>Standard Goldendoodle</h3><p>The classic. Standards thrive in homes with yards and love being the center of family life.</p></div>
+    </div>
+    <p style="text-align:center;margin-top:1.75rem"><a class="spoke" href="#">Compare all three sizes side by side <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<section id="cost">
+  <div class="wrap narrow prose">
+    <span class="eyebrow">Cost</span>
+    <div class="sec-head" style="margin-bottom:1.25rem"><h2>What Does a Goldendoodle Cost?</h2></div>
+    <p>We offer <strong>various price points</strong> depending on size, generation, coat type, and training level. What we don't do is cut corners: rock-bottom prices usually mean skipped health testing, socialization, and veterinary care — a "deal" that can become thousands in vet bills. Our puppies are priced to reflect what went into raising them right.</p>
+  </div>
+</section>
+
   </div>
 </header>
 
@@ -258,113 +334,28 @@
 <!-- ════════ 2 · TOC ════════ -->
 <nav class="toc" aria-label="Table of contents">
   <div class="wrap">
+    <a href="#puppies">Available Puppies</a>
     <a href="#meet">The Breed</a>
     <a href="#sizes">Sizes</a>
-    <a href="#coat">Coat &amp; Allergies</a>
-    <a href="#temperament">Temperament &amp; Training</a>
     <a href="#cost">Cost</a>
-    <a href="#puppies">Available Puppies</a>
     <a href="#trained">Trained Dogs</a>
     <a href="#delivery">Delivery</a>
     <a href="#faq">FAQ</a>
   </div>
 </nav>
 
-<!-- ════════ 3 · Núcleo informativo ════════ -->
-<section id="meet">
-  <div class="wrap narrow prose">
-    <span class="eyebrow">The Breed</span>
-    <div class="sec-head" style="margin-bottom:1.25rem"><h2>Meet the Goldendoodle: America's Favorite Designer Dog</h2></div>
-    <p>A Goldendoodle is a cross between a Golden Retriever and a Poodle — two of the most intelligent, loyal breeds in the world. The result? A dog that is <strong>gentle with children, easy to train, low-shedding</strong>, and endlessly loving, with that unmistakable teddy-bear charm.</p>
-    <p>Whether you call them Goldendoodles, Golden Doodles, or Groodles, our Virginia-based kennel raises some of the most sought-after puppies on the East Coast, bred for health and temperament first.</p>
-    <a class="spoke" href="#">What F1, F1b and F2 generations mean <svg class="ico"><use href="#i-arrow"/></svg></a>
-  </div>
-</section>
 
-<section id="sizes" class="band">
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow">Sizes</span>
-      <h2>Goldendoodle Sizes: Mini, Medium &amp; Standard</h2>
-      <p>Not every family needs the same dog — that's why we breed three sizes.</p>
-    </div>
-    <div class="sizes">
-      <div class="size-card"><span class="w">15–35 LBS</span><h3>Mini Goldendoodle</h3><p>Ideal for smaller homes or families who want a more compact companion — with all the personality of their larger siblings.</p></div>
-      <div class="size-card"><span class="w">35–50 LBS</span><h3>Medium Goldendoodle</h3><p>The sweet spot. Active enough to hike with you, calm enough to curl up on the couch at the end of the day.</p></div>
-      <div class="size-card"><span class="w">50–90 LBS</span><h3>Standard Goldendoodle</h3><p>The classic. Standards thrive in homes with yards and love being the center of family life.</p></div>
-    </div>
-    <p style="text-align:center;margin-top:1.75rem"><a class="spoke" href="#">Compare all three sizes side by side <svg class="ico"><use href="#i-arrow"/></svg></a></p>
-  </div>
-</section>
 
-<section id="coat">
-  <div class="wrap narrow prose">
-    <span class="eyebrow">Coat &amp; Allergies</span>
-    <div class="sec-head" style="margin-bottom:1.25rem"><h2>The Allergy-Friendly Choice</h2></div>
-    <p>Concerned about shedding or allergies? Our Goldendoodles are bred for <strong>low-shedding, allergy-friendly coats</strong> — among the closest to non-shedding a dog can get. Most allergy sufferers react to dander rather than fur, and a low-shedding coat spreads far less of it around your home.</p>
-    <p>Coats range from tight curls to loose, shaggy waves. Curlier coats shed least and need more frequent grooming; most owners keep coats trimmed to prevent matting.</p>
-    <a class="spoke" href="#">Do Goldendoodles change color as they grow? <svg class="ico"><use href="#i-arrow"/></svg></a>
-  </div>
-</section>
 
-<section id="temperament" class="band">
-  <div class="wrap narrow prose">
-    <span class="eyebrow">Temperament &amp; Training</span>
-    <div class="sec-head" style="margin-bottom:1.25rem"><h2>Temperament, Intelligence &amp; Training</h2></div>
-    <p>The Goldendoodle's superpower is its personality: <strong>intelligent, patient, and adoring</strong>. They're highly sociable with children, other dogs, and even cats — though that trusting nature makes them poor watchdogs. Both parent breeds rank among the smartest dogs, so they learn fast (good habits and bad ones alike) and respond best to positive, consistent training.</p>
-    <p>Plan on 30–60 minutes of activity a day, early socialization, and plenty of human company — they're companion dogs to the core and would rather be with you than anywhere else.</p>
-    <a class="spoke" href="#">Goldendoodle temperament guide <svg class="ico"><use href="#i-arrow"/></svg></a>&ensp;·&ensp;<a class="spoke" href="#">Are Goldendoodles smart? <svg class="ico"><use href="#i-arrow"/></svg></a>
-  </div>
-</section>
 
-<section id="cost">
-  <div class="wrap narrow prose">
-    <span class="eyebrow">Cost</span>
-    <div class="sec-head" style="margin-bottom:1.25rem"><h2>What Does a Goldendoodle Cost? Understanding Your Investment</h2></div>
-    <p>We offer <strong>various price points</strong> depending on size, generation, coat type, and training level — so there's an option for a range of budgets. What we don't do is cut corners to offer a lower number.</p>
-    <p>Puppies sold at rock-bottom prices often come from breeders who skip genetic health testing, early socialization, and veterinary care. That "deal" can quickly become thousands of dollars in vet bills — and heartbreak. Our puppies are priced to reflect what went into raising them right.</p>
-  </div>
-</section>
 
-<!-- ════════ 4 · Bloque comercial ════════ -->
-<section id="puppies" class="band">
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow">Now Reserving</span>
-      <h2>Available Goldendoodle Puppies &amp; Upcoming Litters</h2>
-      <p>Every puppy goes home with a veterinary health certificate and our lifetime support.</p>
-    </div>
-    <div class="litters">
-      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
-        <div class="body"><h3>Lady Diana's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
-      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
-        <div class="body"><h3>Antigone's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
-      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
-        <div class="body"><h3>Teresa's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
-    </div>
-    <div class="btn-row">
-      <a class="btn secondary" href="#">All Goldendoodles</a>
-      <a class="btn secondary" href="#">All Labradoodles</a>
-      <a class="btn secondary" href="#">All Cockapoos</a>
-      <a class="btn secondary" href="#">All Trained Puppies</a>
-    </div>
-  </div>
-</section>
 
-<section>
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow">Simple Process</span>
-      <h2>How to Reserve Your Goldendoodle</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><img src="https://muchadoaboutdoodles.com/wp-content/uploads/2024/05/icon_01.png" alt=""><h3>Browse Our Puppies</h3><p>Explore our available Goldendoodles, Labradoodles, Cockapoos, and trained puppies.</p></div>
-      <div class="step"><img src="https://muchadoaboutdoodles.com/wp-content/uploads/2024/05/icon_02.png" alt=""><h3>Make a Reservation</h3><p>Found your perfect puppy? Contact us for a reservation form — or visit in person or virtually first.</p></div>
-      <div class="step"><img src="https://muchadoaboutdoodles.com/wp-content/uploads/2024/05/icon_03.png" alt=""><h3>Stay Updated</h3><p>We send regular updates on your puppy's progress until they're old enough to go home.</p></div>
-      <div class="step"><img src="https://muchadoaboutdoodles.com/wp-content/uploads/2024/05/icon_041.png" alt=""><h3>Personalized Delivery</h3><p>Our staff hand-delivers your puppy anywhere in the 48 contiguous states.</p></div>
-    </div>
-  </div>
-</section>
+
+
+
+
+
+
 
 <section id="trained" class="band">
   <div class="wrap">

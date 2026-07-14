@@ -33,36 +33,36 @@
   a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
   .wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem}
   .narrow{max-width:820px;margin:0 auto}
-  section{padding:4.5rem 0}
+  section{padding:4.25rem 0}
   section[id]{scroll-margin-top:4.25rem}
-  @media(max-width:700px){section{padding:3rem 0}}
+  @media(max-width:700px){section{padding:2.75rem 0}}
   .band{background:var(--card);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
 
   .ico{width:1.15em;height:1.15em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.2em;flex:none}
 
-  /* ───── banner + header ───── */
+  /* banner + header */
   .preview-banner{background:var(--ink);color:#EFEAE2;text-align:center;font-size:.8rem;letter-spacing:.02em;padding:.5rem 1rem}
   .preview-banner strong{color:#E9C28F;font-weight:500}
   header.site{background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.9rem 0;position:relative;z-index:30}
   header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-  .logo{font-family:"Playfair Display",serif;font-weight:700;font-size:1.15rem;letter-spacing:.01em}
+  .logo{font-family:"Playfair Display",serif;font-weight:700;font-size:1.15rem;letter-spacing:.01em;white-space:nowrap}
   .logo em{font-style:italic;color:var(--sage-ink)}
   nav.demo{display:flex;gap:1.6rem;font-size:.9rem;font-weight:500;color:var(--soft)}
-  nav.demo span{cursor:pointer;transition:color .2s var(--ease)}
+  nav.demo span{cursor:pointer;transition:color .2s var(--ease);white-space:nowrap}
   nav.demo span:hover{color:var(--amber)}
   @media(max-width:760px){nav.demo{display:none}}
 
-  /* ───── hero ───── */
+  /* hero */
   .hero{background:
       radial-gradient(90rem 40rem at 110% -20%,var(--sage-tint) 0%,transparent 55%),
       radial-gradient(70rem 35rem at -20% 120%,var(--amber-tint) 0%,transparent 50%),
       var(--cream);
-    padding:4.5rem 0 4rem;border-bottom:1px solid var(--line-soft)}
+    padding:4.25rem 0 4rem;border-bottom:1px solid var(--line-soft)}
   .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:center}
   @media(max-width:880px){.hero .wrap{grid-template-columns:1fr;gap:2.25rem}.hero{padding:3rem 0}}
   .eyebrow{display:inline-flex;align-items:center;gap:.45rem;font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:1.1rem}
   .eyebrow::before{content:"";width:1.6rem;height:1px;background:var(--amber)}
-  .hero h1{font-size:clamp(2.1rem,4.6vw,3.4rem);margin-bottom:1.1rem}
+  .hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);margin-bottom:1.1rem}
   .hero h1 em{font-style:italic;color:var(--sage-ink)}
   .hero .lede{font-size:1.08rem;font-weight:300;color:var(--soft);max-width:56ch;margin-bottom:1.75rem}
   .hero .lede strong{font-weight:500;color:var(--ink)}
@@ -76,21 +76,21 @@
   .hero-chip{position:absolute;left:1rem;bottom:1rem;background:rgba(255,255,255,.94);border-radius:var(--r-m);padding:.65rem 1rem;font-size:.82rem;font-weight:500;box-shadow:var(--sh-1);display:flex;align-items:center;gap:.55rem}
   .hero-chip .ico{color:var(--amber)}
 
-  /* ───── buttons ───── */
+  /* buttons */
   .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--amber);color:#fff;text-decoration:none;font-weight:500;font-size:.95rem;padding:.78rem 1.5rem;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:background .2s var(--ease),box-shadow .2s var(--ease)}
   .btn:hover{background:var(--amber-dark);box-shadow:var(--sh-1)}
   .btn.secondary{background:transparent;color:var(--sage-ink);border-color:var(--sage)}
   .btn.secondary:hover{background:var(--sage-tint);box-shadow:none}
   .btn .ico{width:1em;height:1em}
 
-  /* ───── TOC ───── */
+  /* TOC */
   .toc{position:sticky;top:0;z-index:20;background:rgba(250,246,239,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .toc .wrap{display:flex;gap:.35rem;overflow-x:auto;padding-top:.6rem;padding-bottom:.6rem;scrollbar-width:none}
   .toc .wrap::-webkit-scrollbar{display:none}
   .toc a{font-size:.82rem;font-weight:500;text-decoration:none;color:var(--soft);border-radius:999px;padding:.34rem .9rem;white-space:nowrap;transition:color .2s var(--ease),background .2s var(--ease)}
   .toc a:hover{color:var(--amber-dark);background:var(--amber-tint)}
 
-  /* ───── section headers ───── */
+  /* section headers */
   .sec-head{max-width:820px;margin:0 auto 2.25rem}
   .sec-head.center{text-align:center}
   .sec-head.center .eyebrow{justify-content:center}
@@ -101,6 +101,7 @@
 
   .prose p{margin-bottom:1rem;color:var(--soft);font-weight:300}
   .prose p strong{color:var(--ink);font-weight:500}
+  .prose h3{font-size:1.25rem;margin:1.6rem 0 .5rem}
   .prose ul{margin:0 0 1rem 1.2rem;color:var(--soft);font-weight:300}
   .prose li{margin-bottom:.45rem}
   .prose li strong{color:var(--ink);font-weight:500}
@@ -112,7 +113,7 @@
   @media(max-width:820px){.split,.split.rev{grid-template-columns:1fr;gap:1.75rem}}
   .split img{border-radius:var(--r-l);box-shadow:var(--sh-2);width:100%;object-fit:cover}
 
-  /* ───── size cards ───── */
+  /* size cards */
   .sizes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:.5rem}
   @media(max-width:820px){.sizes{grid-template-columns:1fr}}
   .size-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:1.4rem 1.4rem 1.5rem;box-shadow:var(--sh-1);transition:box-shadow .25s var(--ease),border-color .25s var(--ease)}
@@ -121,9 +122,9 @@
   .size-card h3{font-size:1.25rem;margin-bottom:.45rem}
   .size-card p{font-size:.92rem;color:var(--soft);font-weight:300}
 
-  /* ───── litters ───── */
+  /* litters */
   .litters{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem}
-  .litter{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-1);transition:box-shadow .25s var(--ease),transform .25s var(--ease)}
+  .litter{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-1);transition:box-shadow .25s var(--ease)}
   .litter:hover{box-shadow:var(--sh-2)}
   .litter .ph{aspect-ratio:4/3;background:
       repeating-linear-gradient(45deg,transparent 0 22px,rgba(138,168,166,.06) 22px 44px),
@@ -135,22 +136,16 @@
   .litter p{font-size:.87rem;color:var(--soft);font-weight:300;margin-bottom:1rem}
   .btn-row{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:2.25rem}
 
-  /* ───── steps ───── */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;counter-reset:step}
+  /* steps (strip compacto) */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;counter-reset:step;margin-top:2.5rem}
   @media(max-width:960px){.steps{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:560px){.steps{grid-template-columns:1fr}}
-  .step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:1.5rem 1.35rem 1.4rem;box-shadow:var(--sh-1)}
-  .step::before{counter-increment:step;content:counter(step);position:absolute;top:1.2rem;right:1.2rem;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--sage-tint);color:var(--sage-ink);font-weight:600;font-size:.85rem;display:flex;align-items:center;justify-content:center}
-  .step img{width:52px;height:52px;object-fit:contain;margin-bottom:.9rem}
-  .step h3{font-size:1.08rem;margin-bottom:.45rem}
-  .step p{font-size:.88rem;color:var(--soft);font-weight:300}
+  .step{position:relative;background:var(--cream);border:1px solid var(--line);border-radius:var(--r-m);padding:1.1rem 1.15rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:.95rem;right:.95rem;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--sage-tint);color:var(--sage-ink);font-weight:600;font-size:.78rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:.98rem;margin-bottom:.25rem;padding-right:2rem}
+  .step p{font-size:.83rem;color:var(--soft);font-weight:300}
 
-  .steps.mini .step{padding:1.1rem 1.15rem}
-  .steps.mini .step::before{top:.95rem;right:.95rem;width:1.6rem;height:1.6rem;font-size:.78rem}
-  .steps.mini .step h3{font-size:.98rem;margin-bottom:.25rem;padding-right:2rem}
-  .steps.mini .step p{font-size:.83rem}
-
-  /* ───── reviews ───── */
+  /* reviews */
   .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
   @media(max-width:820px){.reviews{grid-template-columns:1fr}}
   .review{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:1.6rem;box-shadow:var(--sh-1);display:flex;flex-direction:column}
@@ -170,7 +165,7 @@
   .assure li .ico{color:var(--sage-ink);margin-top:.2rem}
   .assure li strong{color:var(--ink);font-weight:500}
 
-  /* ───── delivery table ───── */
+  /* delivery table */
   .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--sh-1);background:var(--card)}
   table.fees{width:100%;border-collapse:collapse;font-size:.93rem}
   .fees th,.fees td{padding:.72rem 1.1rem;text-align:left;border-bottom:1px solid var(--line-soft)}
@@ -182,7 +177,7 @@
   .free-badge{display:inline-block;background:var(--sage-ink);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.06em;border-radius:999px;padding:.18rem .65rem}
   .foot-note{font-size:.83rem;color:var(--faint);margin-top:.7rem}
 
-  /* ───── FAQ ───── */
+  /* FAQ */
   .faq-grid{display:grid;grid-template-columns:1.55fr .95fr;gap:2.5rem;align-items:start}
   @media(max-width:880px){.faq-grid{grid-template-columns:1fr}}
   .faq h3{font-size:1.05rem;font-family:Roboto,sans-serif;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-ink);margin:2.2rem 0 .4rem}
@@ -202,10 +197,8 @@
   .contact-card .btn{background:#fff;color:var(--sage-ink)}
   .contact-card .btn:hover{background:var(--cream);box-shadow:none}
 
-  /* ───── final CTA ───── */
-  .final{background:
-      radial-gradient(60rem 30rem at 50% 130%,var(--amber-tint) 0%,transparent 60%),var(--card);
-      border-top:1px solid var(--line-soft);text-align:center}
+  /* final CTA */
+  .final{background:radial-gradient(60rem 30rem at 50% 130%,var(--amber-tint) 0%,transparent 60%),var(--card);border-top:1px solid var(--line-soft);text-align:center}
   .final h2{font-size:clamp(1.6rem,3.2vw,2.4rem);margin-bottom:.8rem}
   .final p{max-width:58ch;margin:0 auto 1.6rem;color:var(--soft);font-weight:300}
 
@@ -233,81 +226,10 @@
   <div class="wrap">
     <div class="logo">Much Ado <em>About</em> Doodles</div>
     <nav class="demo"><span>Puppies</span><span>Upcoming Litters</span><span>Training</span><span>Guides</span><span>Contact</span></nav>
-
-<!-- ════════ 3 · Bloque comercial (arriba, tras hero+TOC) ════════ -->
-<section id="puppies" class="band">
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow">Now Reserving</span>
-      <h2>Available Goldendoodle Puppies &amp; Upcoming Litters</h2>
-      <p>Every puppy goes home with a veterinary health certificate and our lifetime support.</p>
-    </div>
-    <div class="litters">
-      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
-        <div class="body"><h3>Lady Diana's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
-      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
-        <div class="body"><h3>Antigone's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
-      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live <span>[litters] shortcode</span></div>
-        <div class="body"><h3>Teresa's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
-    </div>
-
-    <div class="steps mini" style="margin-top:2.5rem">
-      <div class="step"><h3>Browse Our Puppies</h3><p>Explore available puppies and upcoming litters.</p></div>
-      <div class="step"><h3>Make a Reservation</h3><p>Request a reservation form — or visit in person or virtually first.</p></div>
-      <div class="step"><h3>Stay Updated</h3><p>Regular progress updates until they're old enough to go home.</p></div>
-      <div class="step"><h3>Personalized Delivery</h3><p>Hand-delivered anywhere in the 48 contiguous states.</p></div>
-    </div>
-    <div class="btn-row">
-      <a class="btn secondary" href="#">All Goldendoodles</a>
-      <a class="btn secondary" href="#">All Labradoodles</a>
-      <a class="btn secondary" href="#">All Cockapoos</a>
-      <a class="btn secondary" href="#">All Trained Puppies</a>
-    </div>
-  </div>
-</section>
-
-<!-- ════════ 4 · Núcleo informativo condensado ════════ -->
-<section id="meet">
-  <div class="wrap narrow prose">
-    <span class="eyebrow">The Breed</span>
-    <div class="sec-head" style="margin-bottom:1.25rem"><h2>Meet the Goldendoodle: America's Favorite Designer Dog</h2></div>
-    <p>A Goldendoodle is a cross between a Golden Retriever and a Poodle — two of the most intelligent, loyal breeds in the world. The result? A dog that is <strong>gentle with children, easy to train, low-shedding</strong>, and endlessly loving, with that unmistakable teddy-bear charm. Our Virginia-based kennel breeds for health and temperament first.</p>
-    <h3>Coat, shedding &amp; allergies</h3>
-    <p>Bred for <strong>low-shedding, allergy-friendly coats</strong> — among the closest to non-shedding a dog can get. Coats range from tight curls (shed least, need more grooming) to loose, shaggy waves; most owners keep them trimmed to prevent matting.</p>
-    <h3>Temperament &amp; training</h3>
-    <p>Intelligent, patient, and adoring — highly sociable with children, other dogs, and even cats. They learn fast and respond best to positive, consistent training. Plan on 30–60 minutes of activity a day and plenty of human company.</p>
-    <p style="margin-top:1.25rem"><a class="spoke" href="#">Goldendoodle temperament guide <svg class="ico"><use href="#i-arrow"/></svg></a>&ensp;·&ensp;<a class="spoke" href="#">F1, F1b and F2 generations <svg class="ico"><use href="#i-arrow"/></svg></a>&ensp;·&ensp;<a class="spoke" href="#">Do they change color? <svg class="ico"><use href="#i-arrow"/></svg></a></p>
-  </div>
-</section>
-
-<section id="sizes" class="band">
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow">Sizes</span>
-      <h2>Goldendoodle Sizes: Mini, Medium &amp; Standard</h2>
-      <p>Not every family needs the same dog — that's why we breed three sizes.</p>
-    </div>
-    <div class="sizes">
-      <div class="size-card"><span class="w">15–35 LBS</span><h3>Mini Goldendoodle</h3><p>Ideal for smaller homes or families who want a more compact companion — with all the personality of their larger siblings.</p></div>
-      <div class="size-card"><span class="w">35–50 LBS</span><h3>Medium Goldendoodle</h3><p>The sweet spot. Active enough to hike with you, calm enough to curl up on the couch at the end of the day.</p></div>
-      <div class="size-card"><span class="w">50–90 LBS</span><h3>Standard Goldendoodle</h3><p>The classic. Standards thrive in homes with yards and love being the center of family life.</p></div>
-    </div>
-    <p style="text-align:center;margin-top:1.75rem"><a class="spoke" href="#">Compare all three sizes side by side <svg class="ico"><use href="#i-arrow"/></svg></a></p>
-  </div>
-</section>
-
-<section id="cost">
-  <div class="wrap narrow prose">
-    <span class="eyebrow">Cost</span>
-    <div class="sec-head" style="margin-bottom:1.25rem"><h2>What Does a Goldendoodle Cost?</h2></div>
-    <p>We offer <strong>various price points</strong> depending on size, generation, coat type, and training level. What we don't do is cut corners: rock-bottom prices usually mean skipped health testing, socialization, and veterinary care — a "deal" that can become thousands in vet bills. Our puppies are priced to reflect what went into raising them right.</p>
-  </div>
-</section>
-
   </div>
 </header>
 
-<!-- ════════ 1 · Hero: H1 + respuesta directa ════════ -->
+<!-- ════════ 1 · Hero ════════ -->
 <div class="hero">
   <div class="wrap">
     <div>
@@ -344,19 +266,78 @@
   </div>
 </nav>
 
+<!-- ════════ 3 · Bloque comercial (arriba) ════════ -->
+<section id="puppies" class="band">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Now Reserving</span>
+      <h2>Available Goldendoodle Puppies &amp; Upcoming Litters</h2>
+      <p>Every puppy goes home with a veterinary health certificate and our lifetime support.</p>
+    </div>
+    <div class="litters">
+      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live [litters] shortcode</div>
+        <div class="body"><h3>Lady Diana's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
+      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live [litters] shortcode</div>
+        <div class="body"><h3>Antigone's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
+      <article class="litter"><div class="ph"><svg class="ico"><use href="#i-camera"/></svg>Litter photos load from the live [litters] shortcode</div>
+        <div class="body"><h3>Teresa's Litter</h3><p>Photos, availability &amp; reserve buttons come from live data.</p><a class="btn" href="#">See Puppies</a></div></article>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Browse Our Puppies</h3><p>Explore available puppies and upcoming litters.</p></div>
+      <div class="step"><h3>Make a Reservation</h3><p>Request a reservation form — or visit in person or virtually first.</p></div>
+      <div class="step"><h3>Stay Updated</h3><p>Regular progress updates until they're old enough to go home.</p></div>
+      <div class="step"><h3>Personalized Delivery</h3><p>Hand-delivered anywhere in the 48 contiguous states.</p></div>
+    </div>
+    <div class="btn-row">
+      <a class="btn secondary" href="#">All Goldendoodles</a>
+      <a class="btn secondary" href="#">All Labradoodles</a>
+      <a class="btn secondary" href="#">All Cockapoos</a>
+      <a class="btn secondary" href="#">All Trained Puppies</a>
+    </div>
+  </div>
+</section>
 
+<!-- ════════ 4 · Núcleo informativo condensado ════════ -->
+<section id="meet">
+  <div class="wrap narrow prose">
+    <span class="eyebrow">The Breed</span>
+    <div class="sec-head" style="margin-bottom:1.25rem"><h2>Meet the Goldendoodle: America's Favorite Designer Dog</h2></div>
+    <p>A Goldendoodle is a cross between a Golden Retriever and a Poodle — two of the most intelligent, loyal breeds in the world. The result? A dog that is <strong>gentle with children, easy to train, low-shedding</strong>, and endlessly loving, with that unmistakable teddy-bear charm. Our Virginia-based kennel breeds for health and temperament first.</p>
+    <h3>Coat, shedding &amp; allergies</h3>
+    <p>Bred for <strong>low-shedding, allergy-friendly coats</strong> — among the closest to non-shedding a dog can get. Coats range from tight curls (shed least, need more grooming) to loose, shaggy waves; most owners keep them trimmed to prevent matting.</p>
+    <h3>Temperament &amp; training</h3>
+    <p>Intelligent, patient, and adoring — highly sociable with children, other dogs, and even cats. They learn fast and respond best to positive, consistent training. Plan on 30–60 minutes of activity a day and plenty of human company.</p>
+    <p style="margin-top:1.25rem"><a class="spoke" href="#">Temperament guide <svg class="ico"><use href="#i-arrow"/></svg></a>&ensp;·&ensp;<a class="spoke" href="#">F1, F1b and F2 generations <svg class="ico"><use href="#i-arrow"/></svg></a>&ensp;·&ensp;<a class="spoke" href="#">Do they change color? <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
 
+<!-- ════════ 5 · Sizes ════════ -->
+<section id="sizes" class="band">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Sizes</span>
+      <h2>Goldendoodle Sizes: Mini, Medium &amp; Standard</h2>
+      <p>Not every family needs the same dog — that's why we breed three sizes.</p>
+    </div>
+    <div class="sizes">
+      <div class="size-card"><span class="w">15–35 LBS</span><h3>Mini Goldendoodle</h3><p>Ideal for smaller homes or families who want a more compact companion — with all the personality of their larger siblings.</p></div>
+      <div class="size-card"><span class="w">35–50 LBS</span><h3>Medium Goldendoodle</h3><p>The sweet spot. Active enough to hike with you, calm enough to curl up on the couch at the end of the day.</p></div>
+      <div class="size-card"><span class="w">50–90 LBS</span><h3>Standard Goldendoodle</h3><p>The classic. Standards thrive in homes with yards and love being the center of family life.</p></div>
+    </div>
+    <p style="text-align:center;margin-top:1.75rem"><a class="spoke" href="#">Compare all three sizes side by side <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
 
+<!-- ════════ 6 · Cost (condensado) ════════ -->
+<section id="cost">
+  <div class="wrap narrow prose">
+    <span class="eyebrow">Cost</span>
+    <div class="sec-head" style="margin-bottom:1.25rem"><h2>What Does a Goldendoodle Cost?</h2></div>
+    <p>We offer <strong>various price points</strong> depending on size, generation, coat type, and training level. What we don't do is cut corners: rock-bottom prices usually mean skipped health testing, socialization, and veterinary care — a "deal" that can become thousands in vet bills. Our puppies are priced to reflect what went into raising them right.</p>
+  </div>
+</section>
 
-
-
-
-
-
-
-
-
-
+<!-- ════════ 7 · Trained ════════ -->
 <section id="trained" class="band">
   <div class="wrap">
     <div class="split rev">
@@ -364,12 +345,7 @@
       <div class="prose">
         <span class="eyebrow">Skip the Puppy Blues</span>
         <div class="sec-head" style="margin-bottom:1.1rem"><h2>Trained Goldendoodles: Ready to Walk in the Door</h2></div>
-        <p>Don't want to start from scratch? Our <strong>trained Goldendoodles</strong> have already begun foundational obedience, crate training, and leash introduction. Ideal for:</p>
-        <ul>
-          <li>First-time dog owners</li>
-          <li>Busy families with young children</li>
-          <li>Those exploring therapy or service dog prospects</li>
-        </ul>
+        <p>Don't want to start from scratch? Our <strong>trained Goldendoodles</strong> have already begun foundational obedience, crate training, and leash introduction. Ideal for first-time dog owners, busy families with young children, and those exploring therapy or service dog prospects.</p>
         <p>A trained puppy saves you months of work and builds a faster, stronger bond from day one.</p>
         <a class="btn" href="#">View Trained Puppies <svg class="ico"><use href="#i-arrow"/></svg></a>
       </div>
@@ -377,7 +353,7 @@
   </div>
 </section>
 
-<!-- ════════ 5 · Prueba social ════════ -->
+<!-- ════════ 8 · Reviews + why us ════════ -->
 <section>
   <div class="wrap">
     <div class="sec-head center">
@@ -405,7 +381,7 @@
   </div>
 </section>
 
-<!-- ════════ 6 · Delivery ════════ -->
+<!-- ════════ 9 · Delivery ════════ -->
 <section id="delivery" class="band">
   <div class="wrap">
     <div class="sec-head center">
@@ -438,7 +414,7 @@
   </div>
 </section>
 
-<!-- ════════ 7 · FAQ ════════ -->
+<!-- ════════ 10 · FAQ ════════ -->
 <section id="faq">
   <div class="wrap">
     <div class="sec-head center">
@@ -450,21 +426,17 @@
         <h3>Appearance &amp; Coat</h3>
         <details><summary>How big do Goldendoodles get? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Minis stand 13–15 inches and weigh 15–35 lbs; mediums run 35–50 lbs; standards reach 22+ inches and 50–90 lbs. See our <a href="#">full size comparison guide</a>.</p></details>
         <details><summary>What colors do they come in? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Golden, apricot, black, copper, white, cream, red, chocolate, and gray — a range as broad as their Poodle parent's.</p></details>
-        <details><summary>How do Goldendoodles look? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Like a teddy bear, in the best way. Coats range from tight curls to loose, shaggy waves, with plenty of variation between individual dogs.</p></details>
         <details><summary>Do Goldendoodles shed? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Most shed far less than the average dog, though coats taking after the Golden Retriever parent may shed lightly. Curlier coats shed least. Note that most allergy sufferers react to dander rather than fur.</p></details>
         <details><summary>What is the grooming routine? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Brush regularly and visit the groomer every few weeks. Curlier coats need more frequent brushing; most owners keep coats trimmed to prevent matting.</p></details>
 
         <h3>Temperament &amp; Family Life</h3>
-        <details><summary>What is their personality like? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Intelligent and adoring. Goldendoodles are gentle, patient, and grow up affectionate and obedient when trained with positive reinforcement.</p></details>
         <details><summary>Are they good with kids and other pets? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Yes — they're highly sociable and do well with children, other dogs, and even cats. Their trusting, friendly nature does make them poor watchdogs, and early socialization is still essential.</p></details>
         <details><summary>How much space do they need? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>They thrive on human contact and are prone to separation anxiety, so they do best living indoors with the family. A house with a fenced yard is ideal; a Mini can adapt to <a href="#">apartment living</a> with enough daily exercise.</p></details>
-        <details><summary>Do they like to play? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Constantly. Like their Golden Retriever and Poodle parents, they instigate friendships through play and have the stamina to keep up with active families.</p></details>
         <details><summary>What type of weather do they prefer? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Mild weather. Many enjoy a swim in the heat (never force a reluctant puppy), and they'll want shade in summer and a warm spot to snuggle in winter.</p></details>
 
         <h3>Training &amp; Exercise</h3>
         <details><summary>How do you train a Goldendoodle puppy? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>With time, consistency, and positive reinforcement — they love to please and learn quickly. We offer both standard puppies and <a href="#">fully trained puppies</a> with obedience foundations already in place.</p></details>
-        <details><summary>Are they intelligent? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Very — both parent breeds rank among the smartest dogs. The flip side: they pick up bad habits as easily as good ones, so training should be firm and consistent, never harsh.</p></details>
-        <details><summary>Are they easy to train and obedient? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Yes, with early training and plenty of stimulation. Their eagerness to please produces highly obedient adults — one reason they're sought after as therapy, service, and guide dogs.</p></details>
+        <details><summary>Are they intelligent and easy to train? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>Very — both parent breeds rank among the smartest dogs, and their eagerness to please produces highly obedient adults. The flip side: they pick up bad habits as easily as good ones, so be firm and consistent, never harsh.</p></details>
         <details><summary>How much exercise do they need? <span class="ind"><svg class="ico"><use href="#i-plus"/></svg></span></summary><p>A minimum of 30 minutes — ideally one hour — of moderate to vigorous activity per day keeps them healthy and calm.</p></details>
 
         <h3>Health &amp; Lifespan</h3>
@@ -481,7 +453,7 @@
   </div>
 </section>
 
-<!-- ════════ 8 · CTA final ════════ -->
+<!-- ════════ 11 · CTA final ════════ -->
 <section class="final">
   <div class="wrap">
     <h2>Ready to Find Your Goldendoodle?</h2>
@@ -493,7 +465,7 @@
 <footer>
   <div class="wrap">
     <p>Preview de propuesta SEO · Preparado para Much Ado About Doodles</p>
-    <p style="margin-top:.4rem;opacity:.75">Estructura pilar: núcleo informativo → conversión → prueba social → delivery → FAQ. Camadas y reseñas son placeholders que en producción rellenan <code>[litters]</code> y el loop grid; los enlaces "→" marcan los spokes del cluster.</p>
+    <p style="margin-top:.4rem;opacity:.75">Estructura pilar condensada: conversión → breed → sizes → cost → trained → reviews → delivery → FAQ. Camadas y reseñas son placeholders que en producción rellenan <code>[litters]</code> y el loop grid.</p>
   </div>
 </footer>
 
